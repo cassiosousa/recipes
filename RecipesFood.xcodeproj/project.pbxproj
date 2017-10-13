@@ -10,11 +10,11 @@
 		DF00D0D61F913EF600020443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF00D0D51F913EF600020443 /* Assets.xcassets */; };
 		DF00D0D91F91481A00020443 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF00D0D81F91481A00020443 /* login.storyboard */; };
 		DF00D0DC1F91496000020443 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF00D0DB1F91496000020443 /* LoginViewController.m */; };
-		DF00D0E11F914A0400020443 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF00D0DF1F914A0400020443 /* Montserrat-Bold.ttf */; };
-		DF00D0E21F914A0400020443 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF00D0E01F914A0400020443 /* Montserrat-Regular.ttf */; };
-		DF00D0E41F914C7E00020443 /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF00D0E31F914C7E00020443 /* Proxima Nova Bold.otf */; };
 		DF00D0EC1F91507100020443 /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF00D0EB1F91507100020443 /* RoundedButton.m */; };
 		DF00D0EF1F91537100020443 /* RoundedBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF00D0EE1F91537100020443 /* RoundedBorderButton.m */; };
+		DF7787A11F9189B500C18DAD /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF77879E1F9189B500C18DAD /* Montserrat-Regular.ttf */; };
+		DF7787A21F9189B500C18DAD /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF77879F1F9189B500C18DAD /* Proxima Nova Bold.otf */; };
+		DF7787A31F9189B500C18DAD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF7787A01F9189B500C18DAD /* Montserrat-Bold.ttf */; };
 		DFC6DB791F9120F7000FFD88 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC6DB781F9120F7000FFD88 /* TabBarViewController.m */; };
 		DFCE8C151F910169005B041D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCE8C141F910169005B041D /* AppDelegate.m */; };
 		DFCE8C181F910169005B041D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCE8C171F910169005B041D /* FirstViewController.m */; };
@@ -48,13 +48,13 @@
 		DF00D0D81F91481A00020443 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
 		DF00D0DA1F91496000020443 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		DF00D0DB1F91496000020443 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		DF00D0DF1F914A0400020443 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../Downloads/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		DF00D0E01F914A0400020443 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../Downloads/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		DF00D0E31F914C7E00020443 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Proxima Nova Bold.otf"; path = "../../../../../Downloads/proxima bold/Proxima Nova Bold.otf"; sourceTree = "<group>"; };
 		DF00D0EA1F91507100020443 /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundedButton.h; path = RecipesFood/RoundedButton/RoundedButton.h; sourceTree = SOURCE_ROOT; };
 		DF00D0EB1F91507100020443 /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundedButton.m; path = RecipesFood/RoundedButton/RoundedButton.m; sourceTree = SOURCE_ROOT; };
 		DF00D0ED1F91537100020443 /* RoundedBorderButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoundedBorderButton.h; path = RecipesFood/RoundedButton/RoundedBorderButton.h; sourceTree = SOURCE_ROOT; };
 		DF00D0EE1F91537100020443 /* RoundedBorderButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RoundedBorderButton.m; path = RecipesFood/RoundedButton/RoundedBorderButton.m; sourceTree = SOURCE_ROOT; };
+		DF77879E1F9189B500C18DAD /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		DF77879F1F9189B500C18DAD /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		DF7787A01F9189B500C18DAD /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		DFC6DB771F9120F7000FFD88 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		DFC6DB781F9120F7000FFD88 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		DFCE8C101F910169005B041D /* RecipesFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipesFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,16 +111,6 @@
 			path = login;
 			sourceTree = "<group>";
 		};
-		DF00D0DE1F9149DA00020443 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				DF00D0E31F914C7E00020443 /* Proxima Nova Bold.otf */,
-				DF00D0DF1F914A0400020443 /* Montserrat-Bold.ttf */,
-				DF00D0E01F914A0400020443 /* Montserrat-Regular.ttf */,
-			);
-			name = Fonts;
-			sourceTree = "<group>";
-		};
 		DF00D0E91F914F8100020443 /* RoundedButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +121,24 @@
 			);
 			name = RoundedButton;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DF77879C1F91896B00C18DAD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DF77879D1F91897300C18DAD /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DF77879D1F91897300C18DAD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DF7787A01F9189B500C18DAD /* Montserrat-Bold.ttf */,
+				DF77879E1F9189B500C18DAD /* Montserrat-Regular.ttf */,
+				DF77879F1F9189B500C18DAD /* Proxima Nova Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		DFC6DB761F9120C8000FFD88 /* TabBarController */ = {
@@ -165,8 +173,8 @@
 		DFCE8C121F910169005B041D /* RecipesFood */ = {
 			isa = PBXGroup;
 			children = (
+				DF77879C1F91896B00C18DAD /* Assets */,
 				DF00D0E91F914F8100020443 /* RoundedButton */,
-				DF00D0DE1F9149DA00020443 /* Fonts */,
 				DF00D0D71F91480900020443 /* login */,
 				DFC6DB761F9120C8000FFD88 /* TabBarController */,
 				DFCE8C131F910169005B041D /* AppDelegate.h */,
@@ -308,10 +316,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF00D0E21F914A0400020443 /* Montserrat-Regular.ttf in Resources */,
-				DF00D0E11F914A0400020443 /* Montserrat-Bold.ttf in Resources */,
+				DF7787A31F9189B500C18DAD /* Montserrat-Bold.ttf in Resources */,
+				DF7787A21F9189B500C18DAD /* Proxima Nova Bold.otf in Resources */,
+				DF7787A11F9189B500C18DAD /* Montserrat-Regular.ttf in Resources */,
 				DF00D0D91F91481A00020443 /* login.storyboard in Resources */,
-				DF00D0E41F914C7E00020443 /* Proxima Nova Bold.otf in Resources */,
 				DFCE8C231F91016A005B041D /* LaunchScreen.storyboard in Resources */,
 				DF00D0D61F913EF600020443 /* Assets.xcassets in Resources */,
 				DFCE8C1E1F91016A005B041D /* Main.storyboard in Resources */,
