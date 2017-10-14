@@ -1,27 +1,27 @@
 //
-//  LoginViewController.m
+//  SignUpViewController.m
 //  RecipesFood
 //
 //  Created by Cássio Sousa on 13/10/2017.
 //  Copyright © 2017 Cassio Sousa. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "SignUpViewController.h"
 
-@interface LoginViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@interface SignUpViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation SignUpViewController
 
 -(void)viewWillAppear:(BOOL)animated{
+    
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
