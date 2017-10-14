@@ -23,14 +23,15 @@
         <!--Navigation Controller-->
         <scene sceneID="7IA-jA-Evm">
             <objects>
-                <navigationController id="HwJ-kF-pKS" sceneMemberID="viewController">
+                <navigationController hidesBarsWhenKeyboardAppears="YES" id="HwJ-kF-pKS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="icArrowBack" backIndicatorTransitionMaskImage="icArrowBackMask" id="Ox5-OU-uFq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iip-DA-O3T">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
                         <segue destination="aiP-kE-YmW" kind="relationship" relationship="rootViewController" id="oKC-2f-GE2"/>
                     </connections>
@@ -60,13 +61,13 @@
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECEPTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh4-SG-0YW">
-                                <rect key="frame" x="12" y="194" width="351" height="49"/>
+                                <rect key="frame" x="12" y="194" width="351" height="47"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="40"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgj-O0-Ewq" customClass="RoundedButton">
-                                <rect key="frame" x="12" y="403" width="351" height="48"/>
+                                <rect key="frame" x="12" y="361" width="351" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="3Gh-Hr-YX3"/>
                                 </constraints>
@@ -77,7 +78,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yw-WH-7uK" customClass="RoundedBorderButton">
-                                <rect key="frame" x="12" y="525" width="351" height="48"/>
+                                <rect key="frame" x="12" y="483" width="351" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="LOt-3z-mNI"/>
                                 </constraints>
@@ -88,7 +89,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCb-mg-POr">
-                                <rect key="frame" x="12" y="476" width="351" height="24"/>
+                                <rect key="frame" x="12" y="434" width="351" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="xTL-P8-EYr"/>
                                 </constraints>
@@ -103,7 +104,6 @@
                             <constraint firstItem="8dc-xh-Sn2" firstAttribute="trailing" secondItem="YCb-mg-POr" secondAttribute="trailing" constant="12" id="1l4-i2-eAg"/>
                             <constraint firstItem="1yw-WH-7uK" firstAttribute="leading" secondItem="8dc-xh-Sn2" secondAttribute="leading" constant="12" id="B70-8L-6PM"/>
                             <constraint firstItem="EEP-Hd-FLG" firstAttribute="bottom" secondItem="aya-mZ-UP7" secondAttribute="bottom" id="CrQ-R9-Qxz"/>
-                            <constraint firstItem="fgj-O0-Ewq" firstAttribute="top" secondItem="8dc-xh-Sn2" secondAttribute="bottom" constant="-264" id="CzB-PB-8ye"/>
                             <constraint firstItem="Fh4-SG-0YW" firstAttribute="top" secondItem="8dc-xh-Sn2" secondAttribute="top" constant="130" id="FDR-Te-cfV"/>
                             <constraint firstItem="Fh4-SG-0YW" firstAttribute="leading" secondItem="8dc-xh-Sn2" secondAttribute="leading" constant="12" id="GFX-fr-zPa"/>
                             <constraint firstItem="fgj-O0-Ewq" firstAttribute="leading" secondItem="8dc-xh-Sn2" secondAttribute="leading" constant="12" id="GT6-aH-roR"/>
@@ -111,14 +111,13 @@
                             <constraint firstItem="1yw-WH-7uK" firstAttribute="top" secondItem="YCb-mg-POr" secondAttribute="bottom" constant="25" id="P8g-6R-7mV"/>
                             <constraint firstItem="EEP-Hd-FLG" firstAttribute="top" secondItem="aya-mZ-UP7" secondAttribute="top" id="TCa-rm-hbn"/>
                             <constraint firstItem="8dc-xh-Sn2" firstAttribute="trailing" secondItem="fgj-O0-Ewq" secondAttribute="trailing" constant="12" id="W1E-nw-24e"/>
-                            <constraint firstItem="fgj-O0-Ewq" firstAttribute="top" secondItem="Fh4-SG-0YW" secondAttribute="bottom" constant="160" id="b9N-x0-wMI"/>
+                            <constraint firstItem="fgj-O0-Ewq" firstAttribute="top" secondItem="Fh4-SG-0YW" secondAttribute="bottom" constant="120" id="b9N-x0-wMI"/>
                             <constraint firstItem="YCb-mg-POr" firstAttribute="leading" secondItem="8dc-xh-Sn2" secondAttribute="leading" constant="12" id="bDF-8m-Vys"/>
                             <constraint firstAttribute="bottom" secondItem="S5x-qi-Tj5" secondAttribute="bottom" id="dBp-SG-ldB"/>
                             <constraint firstItem="YCb-mg-POr" firstAttribute="top" secondItem="fgj-O0-Ewq" secondAttribute="bottom" constant="25" id="dzE-p8-8W8"/>
                             <constraint firstItem="S5x-qi-Tj5" firstAttribute="top" secondItem="aya-mZ-UP7" secondAttribute="top" id="hvV-on-wcp"/>
                             <constraint firstItem="8dc-xh-Sn2" firstAttribute="trailing" secondItem="1yw-WH-7uK" secondAttribute="trailing" constant="12" id="ovm-zz-QfM"/>
                             <constraint firstAttribute="trailing" secondItem="S5x-qi-Tj5" secondAttribute="trailing" id="uV4-nt-0dm"/>
-                            <constraint firstItem="Fh4-SG-0YW" firstAttribute="top" secondItem="8dc-xh-Sn2" secondAttribute="bottom" constant="-473" id="uWd-yN-JaK"/>
                             <constraint firstItem="S5x-qi-Tj5" firstAttribute="leading" secondItem="aya-mZ-UP7" secondAttribute="leading" id="utO-io-OWO"/>
                             <constraint firstItem="EEP-Hd-FLG" firstAttribute="trailing" secondItem="aya-mZ-UP7" secondAttribute="trailing" id="wOh-TM-Chs"/>
                         </constraints>
@@ -151,19 +150,19 @@
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xln-bj-Hw3">
-                                <rect key="frame" x="12" y="144" width="351" height="44"/>
+                                <rect key="frame" x="12" y="144" width="351" height="42"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="36"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice to meet you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLH-dr-fkp">
-                                <rect key="frame" x="12" y="193" width="351" height="17.5"/>
+                                <rect key="frame" x="12" y="191" width="351" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7vF-X4-ARl" customClass="PaddingTextField">
-                                <rect key="frame" x="12" y="260.5" width="351" height="48"/>
+                                <rect key="frame" x="12" y="257.5" width="351" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -175,7 +174,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="22K-BB-k4f" customClass="PaddingTextField">
-                                <rect key="frame" x="12" y="323.5" width="351" height="48"/>
+                                <rect key="frame" x="12" y="320.5" width="351" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -188,7 +187,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eu8-Ky-sTT" customClass="PaddingTextField">
-                                <rect key="frame" x="12" y="386.5" width="351" height="48"/>
+                                <rect key="frame" x="12" y="383.5" width="351" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -202,7 +201,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zN-4q-5Rc" customClass="RoundedButton">
-                                <rect key="frame" x="12" y="469.5" width="351" height="48"/>
+                                <rect key="frame" x="12" y="466.5" width="351" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Mc4-cL-n1L"/>
                                 </constraints>
@@ -267,19 +266,19 @@
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JP-3S-Zoi">
-                                <rect key="frame" x="12" y="144" width="351" height="44"/>
+                                <rect key="frame" x="12" y="144" width="351" height="42"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="36"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good to see you again" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgz-Lq-bei">
-                                <rect key="frame" x="12" y="193" width="351" height="17.5"/>
+                                <rect key="frame" x="12" y="191" width="351" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQu-JU-F9x" customClass="PaddingTextField">
-                                <rect key="frame" x="12" y="336.5" width="351" height="48"/>
+                                <rect key="frame" x="12" y="333.5" width="351" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -290,7 +289,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="krI-1F-Tqd" customClass="PaddingTextField">
-                                <rect key="frame" x="12" y="404.5" width="351" height="48"/>
+                                <rect key="frame" x="12" y="401.5" width="351" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -301,7 +300,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8q-pI-eiJ" customClass="RoundedButton">
-                                <rect key="frame" x="12" y="482.5" width="351" height="48"/>
+                                <rect key="frame" x="12" y="479.5" width="351" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="3RO-VW-Z2f"/>
                                 </constraints>
@@ -309,7 +308,7 @@
                                 <state key="normal" title="LOG IN"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRB-ea-PZO">
-                                <rect key="frame" x="12" y="555.5" width="351" height="24"/>
+                                <rect key="frame" x="12" y="552.5" width="351" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="F4W-Il-qYK"/>
                                 </constraints>

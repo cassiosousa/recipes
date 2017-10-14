@@ -37,7 +37,7 @@ IB_DESIGNABLE
 - (void)roundedButton{
     self.tintColor = UIColor.whiteColor;
     self.layer.cornerRadius = self.frame.size.height / 2;
-    self.layer.masksToBounds = NO;
+    self.layer.masksToBounds = YES;
     
     CAGradientLayer *gradient = [CAGradientLayer layer];
     
