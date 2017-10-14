@@ -24,10 +24,13 @@
         <scene sceneID="7IA-jA-Evm">
             <objects>
                 <navigationController id="HwJ-kF-pKS" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ox5-OU-uFq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="icArrowBack" backIndicatorTransitionMaskImage="icArrowBackMask" id="Ox5-OU-uFq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iip-DA-O3T">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="aiP-kE-YmW" kind="relationship" relationship="rootViewController" id="oKC-2f-GE2"/>
                     </connections>
@@ -141,18 +144,42 @@
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8q-pI-eiJ" customClass="RoundedButton">
+                                <rect key="frame" x="12" y="482" width="351" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="3RO-VW-Z2f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                <state key="normal" title="LOG IN"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRB-ea-PZO">
+                                <rect key="frame" x="12" y="555" width="351" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="F4W-Il-qYK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <state key="normal" title="Forgot your password?">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ZRB-ea-PZO" firstAttribute="top" secondItem="Q8q-pI-eiJ" secondAttribute="bottom" constant="25" id="1d1-wm-nT2"/>
                             <constraint firstItem="xQu-JU-F9x" firstAttribute="top" secondItem="fgz-Lq-bei" secondAttribute="bottom" constant="126" id="2eP-2C-tOc"/>
+                            <constraint firstItem="Q8q-pI-eiJ" firstAttribute="top" secondItem="krI-1F-Tqd" secondAttribute="bottom" constant="30" id="6L7-0R-zCl"/>
                             <constraint firstItem="o7F-M5-Csh" firstAttribute="trailing" secondItem="krI-1F-Tqd" secondAttribute="trailing" constant="12" id="9Lc-mm-6vX"/>
                             <constraint firstItem="fgz-Lq-bei" firstAttribute="leading" secondItem="o7F-M5-Csh" secondAttribute="leading" constant="12" id="9jk-xj-nqy"/>
+                            <constraint firstItem="Q8q-pI-eiJ" firstAttribute="leading" secondItem="o7F-M5-Csh" secondAttribute="leading" constant="12" id="D8w-h4-zcp"/>
+                            <constraint firstItem="o7F-M5-Csh" firstAttribute="trailing" secondItem="ZRB-ea-PZO" secondAttribute="trailing" constant="12" id="GIg-KK-dcC"/>
                             <constraint firstItem="krI-1F-Tqd" firstAttribute="top" secondItem="xQu-JU-F9x" secondAttribute="bottom" constant="20" id="HUs-fa-k0j"/>
                             <constraint firstItem="7JP-3S-Zoi" firstAttribute="top" secondItem="o7F-M5-Csh" secondAttribute="top" constant="80" id="KRN-0O-Gzn"/>
                             <constraint firstItem="o7F-M5-Csh" firstAttribute="trailing" secondItem="7JP-3S-Zoi" secondAttribute="trailing" constant="12" id="Rzw-vS-Szo"/>
                             <constraint firstItem="krI-1F-Tqd" firstAttribute="leading" secondItem="o7F-M5-Csh" secondAttribute="leading" constant="12" id="TR4-Fq-sxw"/>
                             <constraint firstItem="o7F-M5-Csh" firstAttribute="trailing" secondItem="xQu-JU-F9x" secondAttribute="trailing" constant="12" id="UpL-v1-kcV"/>
                             <constraint firstItem="fgz-Lq-bei" firstAttribute="top" secondItem="7JP-3S-Zoi" secondAttribute="bottom" constant="5" id="eAJ-mJ-zvG"/>
+                            <constraint firstItem="ZRB-ea-PZO" firstAttribute="leading" secondItem="o7F-M5-Csh" secondAttribute="leading" constant="12" id="eXV-qR-45p"/>
+                            <constraint firstItem="o7F-M5-Csh" firstAttribute="trailing" secondItem="Q8q-pI-eiJ" secondAttribute="trailing" constant="12" id="mXv-TL-nM9"/>
                             <constraint firstItem="7JP-3S-Zoi" firstAttribute="leading" secondItem="o7F-M5-Csh" secondAttribute="leading" constant="12" id="t6o-z2-Yqk"/>
                             <constraint firstItem="o7F-M5-Csh" firstAttribute="trailing" secondItem="fgz-Lq-bei" secondAttribute="trailing" constant="12" id="wHy-sj-GAA"/>
                             <constraint firstItem="xQu-JU-F9x" firstAttribute="leading" secondItem="o7F-M5-Csh" secondAttribute="leading" constant="12" id="z5D-f3-ODJ"/>
@@ -170,4 +197,8 @@
             <point key="canvasLocation" x="-836" y="-54"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icArrowBack" width="18" height="18"/>
+        <image name="icArrowBackMask" width="18" height="18"/>
+    </resources>
 </document>
