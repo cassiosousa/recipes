@@ -16,6 +16,8 @@
 		DF7787A21F9189B500C18DAD /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF77879F1F9189B500C18DAD /* Proxima Nova Bold.otf */; };
 		DF7787A31F9189B500C18DAD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF7787A01F9189B500C18DAD /* Montserrat-Bold.ttf */; };
 		DF7787A71F9192DC00C18DAD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7787A61F9192DC00C18DAD /* LoginViewController.m */; };
+		DF9924D11F91A476002D2152 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9924D01F91A476002D2152 /* SignUpViewController.m */; };
+		DF9924D51F91A5A4002D2152 /* PaddingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9924D41F91A5A4002D2152 /* PaddingTextField.m */; };
 		DFC6DB791F9120F7000FFD88 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC6DB781F9120F7000FFD88 /* TabBarViewController.m */; };
 		DFCE8C151F910169005B041D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCE8C141F910169005B041D /* AppDelegate.m */; };
 		DFCE8C181F910169005B041D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCE8C171F910169005B041D /* FirstViewController.m */; };
@@ -58,6 +60,10 @@
 		DF7787A01F9189B500C18DAD /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		DF7787A51F9192DC00C18DAD /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		DF7787A61F9192DC00C18DAD /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DF9924CF1F91A476002D2152 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		DF9924D01F91A476002D2152 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		DF9924D31F91A5A4002D2152 /* PaddingTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddingTextField.h; sourceTree = "<group>"; };
+		DF9924D41F91A5A4002D2152 /* PaddingTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddingTextField.m; sourceTree = "<group>"; };
 		DFC6DB771F9120F7000FFD88 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		DFC6DB781F9120F7000FFD88 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		DFCE8C101F910169005B041D /* RecipesFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipesFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +113,7 @@
 		DF00D0D71F91480900020443 /* Autentication */ = {
 			isa = PBXGroup;
 			children = (
+				DF9924CE1F91A454002D2152 /* signup */,
 				DF7787A41F91929000C18DAD /* login */,
 				DF00D0D81F91481A00020443 /* autentication.storyboard */,
 				DF00D0DA1F91496000020443 /* AutenticationViewController.h */,
@@ -154,6 +161,24 @@
 			path = login;
 			sourceTree = "<group>";
 		};
+		DF9924CE1F91A454002D2152 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				DF9924CF1F91A476002D2152 /* SignUpViewController.h */,
+				DF9924D01F91A476002D2152 /* SignUpViewController.m */,
+			);
+			path = signup;
+			sourceTree = "<group>";
+		};
+		DF9924D21F91A577002D2152 /* PaddingTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				DF9924D31F91A5A4002D2152 /* PaddingTextField.h */,
+				DF9924D41F91A5A4002D2152 /* PaddingTextField.m */,
+			);
+			path = PaddingTextFields;
+			sourceTree = "<group>";
+		};
 		DFC6DB761F9120C8000FFD88 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +211,7 @@
 		DFCE8C121F910169005B041D /* RecipesFood */ = {
 			isa = PBXGroup;
 			children = (
+				DF9924D21F91A577002D2152 /* PaddingTextFields */,
 				DF77879C1F91896B00C18DAD /* Assets */,
 				DF00D0E91F914F8100020443 /* RoundedButton */,
 				DF00D0D71F91480900020443 /* Autentication */,
@@ -365,7 +391,9 @@
 				DF00D0DC1F91496000020443 /* AutenticationViewController.m in Sources */,
 				DF00D0EF1F91537100020443 /* RoundedBorderButton.m in Sources */,
 				DFCE8C151F910169005B041D /* AppDelegate.m in Sources */,
+				DF9924D51F91A5A4002D2152 /* PaddingTextField.m in Sources */,
 				DF7787A71F9192DC00C18DAD /* LoginViewController.m in Sources */,
+				DF9924D11F91A476002D2152 /* SignUpViewController.m in Sources */,
 				DFCE8C261F91016A005B041D /* main.m in Sources */,
 				DFCE8C181F910169005B041D /* FirstViewController.m in Sources */,
 				DF00D0EC1F91507100020443 /* RoundedButton.m in Sources */,

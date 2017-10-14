@@ -37,24 +37,16 @@ IB_DESIGNABLE
 - (void)roundedButton{
     self.tintColor = UIColor.whiteColor;
     self.layer.cornerRadius = self.frame.size.height / 2;
-    self.layer.masksToBounds = YES;
+    self.layer.masksToBounds = NO;
     
     CAGradientLayer *gradient = [CAGradientLayer layer];
     
-    gradient.frame = self.bounds;
+    gradient.frame = self.frame;
     gradient.startPoint = CGPointMake(0.0, 0.5);
     gradient.endPoint = CGPointMake(0.5, 1);
     gradient.colors = @[(id)[UIColor colorWithRed:1.00 green:0.55 blue:0.17 alpha:1.0].CGColor, (id)[UIColor colorWithRed:1.00 green:0.39 blue:0.13 alpha:1.0].CGColor];
-    
+    self.backgroundColor = [UIColor colorWithRed:1.00 green:0.55 blue:0.17 alpha:1.0];
     [self.layer insertSublayer:gradient atIndex:0];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
