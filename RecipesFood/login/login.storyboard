@@ -29,13 +29,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECEPTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh4-SG-0YW">
-                                <rect key="frame" x="12" y="150" width="351" height="47"/>
+                                <rect key="frame" x="12" y="150" width="351" height="49"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="40"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgj-O0-Ewq" customClass="RoundedButton">
-                                <rect key="frame" x="12" y="357" width="351" height="48"/>
+                                <rect key="frame" x="12" y="359" width="351" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="3Gh-Hr-YX3"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 <state key="normal" title="LOG IN"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yw-WH-7uK" customClass="RoundedBorderButton">
-                                <rect key="frame" x="12" y="479" width="351" height="48"/>
+                                <rect key="frame" x="12" y="481" width="351" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="LOt-3z-mNI"/>
                                 </constraints>
@@ -51,7 +51,7 @@
                                 <state key="normal" title="SIGN UP"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCb-mg-POr">
-                                <rect key="frame" x="12" y="430" width="351" height="24"/>
+                                <rect key="frame" x="12" y="432" width="351" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="xTL-P8-EYr"/>
                                 </constraints>
