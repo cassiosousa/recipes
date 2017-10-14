@@ -6,14 +6,17 @@
 //  Copyright © 2017 Cassio Sousa. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "AutenticationViewController.h"
 
-@interface LoginViewController ()
+@interface AutenticationViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation AutenticationViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
