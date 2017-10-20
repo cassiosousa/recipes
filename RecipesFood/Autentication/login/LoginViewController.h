@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+//@class AppDelegate;
 
+@interface LoginViewController : UIViewController{
+//AppDelegate* appDelegate;
+}
 @end

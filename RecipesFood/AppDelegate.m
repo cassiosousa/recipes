@@ -47,5 +47,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+/**
+ * Returns the mobile backend that is configured in OMC.plist file
+ */
+//- (OMCMobileBackend *) myMobileBackend{
+//    
+//    return [[OMCMobileBackendManager sharedManager] mobileBackendForName:OMC_MBE_Name];
+//    
+//}
+
 
 @end

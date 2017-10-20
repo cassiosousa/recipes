@@ -7,6 +7,11 @@
 //
 
 #import "LoginViewController.h"
+#import "MobileBackend.h"
+#import "OMCMobileBackendManager.h"
+#import "OMCAuthorization.h"
+#import "AppDelegate.h"
+
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -27,6 +32,21 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)loginAction:(id)sender {
+     
+    MobileBackend *mbe = [[MobileBackend alloc] init];
+    OMCAuthorizationAuthCompletionBlock loginBlock = ^(NSError *error){
+        if (error == nil) {
+            NSLog(@"Autenticado.");
+        }
+        else{
+            NSLog(@"Falha autenticação:%@",error.description);
+        }
+    };
+   
+    [mbe authenticate:@"appinterfaceadmindevuser" password:@"Pomarola123" completionBlock:loginBlock];
+    
 }
 
 /*
