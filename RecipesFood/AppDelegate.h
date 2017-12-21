@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "OMCMobileBackendManager.h"
 
+#import "MobileBackend.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-- (OMCMobileBackend *) myMobileBackend;
+@property (strong, nonatomic) MobileBackend *myMobileBackend;
 
 @end
 
