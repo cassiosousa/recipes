@@ -20,4 +20,5 @@
 - (void)authenticate:(NSString *)userName
              password:(NSString *)password
       completionBlock: (OMCAuthorizationAuthCompletionBlock) completionBlock;
+- (void) getRecipes:(void(^)(NSError * _Nullable error, NSHTTPURLResponse * _Nullable response, id  _Nullable responseData))completionBlock;
 @end

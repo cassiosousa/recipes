@@ -9,7 +9,7 @@
 #import "ListRecipesTableViewController.h"
 
 @interface ListRecipesTableViewController ()
-
+@property (strong,nonatomic) NSArray *recipes;
 @end
 
 @implementation ListRecipesTableViewController
@@ -22,6 +22,16 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"recipesCellIdentifier"];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    __weak typeof(self) weakSelf = self;
+    [appDelegate.myMobileBackend getRecipes:^(NSError * _Nullable error, NSHTTPURLResponse * _Nullable response, NSArray *responseData) {
+        NSLog(@"CALL GET RECIPES STATUS:%lu",[response statusCode]);
+        NSLog(@"CALL GET RECIPES STATUS:%@",responseData);
+        weakSelf.recipes = responseData;
+        [weakSelf.tableView reloadData];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +42,23 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    NSLog(@"ROWS:%lu",self.recipes.count);
+    return self.recipes.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recipesCellIdentifier" forIndexPath:indexPath];
+    NSDictionary *nsdict = [self.recipes objectAtIndex:indexPath.row];
     // Configure the cell...
+    [cell textLabel].text = [nsdict valueForKeyPath:@"name"];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
