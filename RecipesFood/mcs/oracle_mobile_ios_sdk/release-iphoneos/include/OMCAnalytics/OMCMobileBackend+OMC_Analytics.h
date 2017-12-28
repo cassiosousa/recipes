@@ -5,7 +5,7 @@
 //  Copyright (c) 2015, Oracle Corp. All rights reserved. 
 //
 
-#import "OMCCore/OMCMobileBackend.h"
+#import "OMCMobileBackend.h"
 @class OMCAnalytics;
 @class OMCMobileBackend;
 

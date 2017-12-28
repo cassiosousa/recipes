@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OMCCore/OMCServiceProxy.h"
+#import "OMCServiceProxy.h"
 @protocol OMCAnalyticsDelegate;
 
 NS_ASSUME_NONNULL_BEGIN

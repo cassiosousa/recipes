@@ -7,6 +7,7 @@
 //
 
 #import "MobileBackend.h"
+
 #define RECIPES_URI @"rec_api/recipes"
 #define METHOD_GET @"GET"
 
@@ -35,6 +36,7 @@
 - (void) authenticate:(NSString *)userName password:(NSString *)password completionBlock:(OMCAuthorizationAuthCompletionBlock)completionBlock{
     
     self.mbe = [self appRecBackEnd];
+    
     OMCAuthorization *auth = [self.mbe authorization];
     [auth authenticate:userName password:password completionBlock:completionBlock];
 }
@@ -42,6 +44,21 @@
 - (void) getRecipes:(void(^)(NSError * _Nullable error, NSHTTPURLResponse * _Nullable response, id  _Nullable responseData))completionBlock {
     OMCCustomCodeClient *customCodeClient = self.mbe.customCodeClient;
    [customCodeClient invokeCustomRequest:RECIPES_URI method:METHOD_GET data:NULL completion:completionBlock];
+}
+
+- (void) registerGetRecipes:(NSString *)name{
+    
+    //analytics delegate register
+    OMCAnalytics* analytics = [self.mbe analytics];
+    // Starting analytics session
+    [analytics startSession];
+    
+    NSDictionary *properties = @{
+                                 @"name": name,
+                                 };
+    
+    [analytics logEvent:@"GetRecipesEvent" properties:properties];
+    [analytics flush];
 }
 
 @end

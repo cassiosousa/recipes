@@ -56,6 +56,10 @@
     // Configure the cell...
     [cell textLabel].text = [nsdict valueForKeyPath:@"name"];
     
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.myMobileBackend registerGetRecipes:[nsdict valueForKeyPath:@"name"]];
+    
     return cell;
 }
 

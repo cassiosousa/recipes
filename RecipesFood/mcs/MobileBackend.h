@@ -11,6 +11,8 @@
 #import "OMCMobileBackend.h"
 #import "OMCMobileBackendManager.h"
 #import "OMCCustomCodeClient.h"
+#import "OMCMobileBackend+OMC_Analytics.h"
+#import "OMCAnalytics.h"
 
 #define OMC_MBE_Name @"AppRecMBE/1.0"
 
@@ -21,4 +23,5 @@
              password:(NSString *)password
       completionBlock: (OMCAuthorizationAuthCompletionBlock) completionBlock;
 - (void) getRecipes:(void(^)(NSError * _Nullable error, NSHTTPURLResponse * _Nullable response, id  _Nullable responseData))completionBlock;
+- (void) registerGetRecipes:(NSString *)name;
 @end
