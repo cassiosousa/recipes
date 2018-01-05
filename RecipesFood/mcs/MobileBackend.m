@@ -58,7 +58,7 @@
                                  };
     
     [analytics logEvent:@"GetRecipesEvent" properties:properties];
-    [analytics flush];
+    [analytics endSessio];
 }
 
 @end

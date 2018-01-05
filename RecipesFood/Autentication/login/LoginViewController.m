@@ -49,7 +49,7 @@
     };
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    [appDelegate.myMobileBackend authenticate:@"appinterfaceadmindevuser" password:@"Pomarola321" completionBlock:loginBlock];
+    [appDelegate.myMobileBackend authenticate:@"" password:@"" completionBlock:loginBlock];
     
 }
 
